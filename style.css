@@ -29,14 +29,14 @@ body {
     min-height: 20%;
     max-height: min-content;
     background-color: rgba(29, 27, 27, 0.151);
-    box-shadow: 16px 13px 25px -2px rgba(66, 68, 90, 1);
+    box-shadow: 8px 13px 16px -10px rgba(255, 255, 255, 1);
     color: white;
     word-break: break-all;
     text-align: right;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 10px;
+    padding-right: 3px;
 }
 
 .currentNumber {
@@ -53,11 +53,12 @@ body {
 }
 
 .panel {
+    width: 100%;
     height: 80%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    gap: 1px;
+    gap: 2px;
 }
 
 .panel button {
@@ -85,7 +86,42 @@ body {
     width: 150px;
     background-color: rgba(20, 27, 27, 0.151);
     color: white;
-    padding: 5px 10xp;
+    padding: 5px 10px;
     font-weight: bold;
     text-align: center;
+}
+
+.history {
+    list-style: none;
+}
+
+.history-title {
+    padding-bottom: 2px;
+}
+
+.history-btn {
+    color: white;
+    background-color: rgba(29, 27, 27, 0.601);
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    display: none;
+    outline: none;
+    margin: 5px auto;
+}
+
+.history-btn.active {
+    display: block;
+}
+
+.history-item{
+    display: flex;
+    align-items: center;
+    margin: 8px 0px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(29, 27, 27 0.233);
+    padding-bottom: 5px;
 }
