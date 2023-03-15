@@ -29,6 +29,9 @@ function operate (){
         currentNumber.innerHTML = '-';
         return;
     }
+    else if(currentNumber.innerHTML === '') {
+        return
+    }
 }
 
 function showResult (){
