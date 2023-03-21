@@ -40,16 +40,16 @@ body {
 }
 
 .currentNumber {
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .previousNumber {
     color: rgba(182, 182, 182);
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .mathSing {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .panel {

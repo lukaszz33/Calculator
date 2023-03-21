@@ -1,12 +1,12 @@
-const currentNumber = document.getSelector ('.currentNumber');
+const currentNumber = document.querySelector ('.currentNumber');
 
 const previousNumber = document.querySelector ('.previousNumber p');
 
-const mathSing = document.querySelector ('.mathSingth');
+const mathSing = document.querySelector ('.mathSing');
 
 const numbersButtons = document.querySelectorAll ('.number');
 
-const operatorsButtons = document.querySelecetorAll('.operator');
+const operatorsButtons = document.querySelectorAll('.operator');
 
 const equalsButton = document.querySelector ('.equals');
 
@@ -14,7 +14,7 @@ const clearButton = document.querySelector ('.clear');
 
 const calculatorHistory = document.querySelector('.history');
 
-const historybtn = documentquerySelector('.history-btn');
+const historybtn = document.querySelector('.history-btn');
 
 let result = '';
 
@@ -32,7 +32,13 @@ function operate (){
     else if(currentNumber.innerHTML === '') {
         return
     }
-}
+    if(mathSing.innerHTML !== '') {
+        showResult();
+    }
+    previousNumber.innerHTML = currentNumber.innerHTML;
+    mathSing.innerHTML = this.textContent;
+    currentNumber.innerHTML = '';
+} 
 
 function showResult (){
 
