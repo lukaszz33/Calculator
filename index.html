@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/>
     <link rel="stylesheet" href="style.css">
     <title>JS Calculator</title>
 </head>
@@ -38,7 +39,7 @@
         <button class="number">.</button>
     </div>
 </div>
-    <div class="calculatorHistory">
+    <div data-simplebar class="calculatorHistory">
         <p class="history-title">Last Calculation <button class="history-btn">Clear History</button></p>
         <hr>
 
@@ -47,7 +48,8 @@
         </ul>
     </div>
 
-<script src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="/main.js"></script>
 
 </body>
 </html>

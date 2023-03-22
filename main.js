@@ -66,21 +66,32 @@ function showResult (){
         break;
     }
     addToHistory();
-    historyBtn.classList.add('active');
+    historybtn.classList.add('active');
     currentNumber.innerHTML = result;
     previousNumber.innerHTML = '';
-    mathSign.innerHTML = '';
+    mathSing.innerHTML = '';
 
 }
 
 function addToHistory () {
     const newHistoryItem = document.createElement('li');
-    newHistoryItem.innerHTML = `${currentNumber.innerHTML} ${mathSign.innerHTML} ${previousNumber.innerHTML} = ${result}`
+    newHistoryItem.innerHTML = `${currentNumber.innerHTML} ${mathSing.innerHTML} ${previousNumber.innerHTML} = ${result}`
     newHistoryItem.classList.add('history-item');
     calculatorHistory.appendChild(newHistoryItem);
 }
 
+function clearHistory () {
+    calculatorHistory.textContent = '';
+    if(calculatorHistory.textContent === '') {
+        historybtn.classList.remove('active');
+    }
+}
+
 function clearScreen (){
+    result = '';
+    currentNumber.innerHTML = '';
+    previousNumber.innerHTML = '';
+    mathSing.innerHTML = '';
 
 }
 
